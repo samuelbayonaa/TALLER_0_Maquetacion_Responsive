@@ -23,7 +23,7 @@ font-family: 'Roboto', sans-serif;
 h1,h2,h3,h4,h5{
  font-family: 'Marcellus', serif;
 }
-/*nav{
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5{
 }
 .logo img{
     height: 3rem;
-} */
+} 
 #features{
     background: url(../img/index/bg-features.png);
     color: white;
