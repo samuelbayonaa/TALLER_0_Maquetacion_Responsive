@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>Hotelia Login</title>
-	<link rel="stylesheet" type="text/css" href="css\login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotelia</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-	<div class="login-box">
-		<form action="/login" method="post">
-            <p>Usuario</p>
-			<div class="textbox">
-				<input type="text" name="username" placeholder="" required>
-			</div>
-            <p>Contraseña</p>
-			<div class="textbox">
-				<input type="password" name="password" placeholder="" required>
-			</div>
-			<input type="submit" value="Ingresar">
-		</form>
-		<div class="register-link">
-			<a href="/register">¿No tienes una cuenta? Regístrate aquí</a>
-		</div>
-	</div>
+    <div class="container">
+        <div class="formulario">
+            <div class="icon">
+        
+            </div>
+            <form>
+                <br>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+                <br>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <br>
+                <button type="submit">Ingresar</button>
+                <br>
+            </form>
+            <p class="registro">No tienes una cuenta?<a href="register.html"> Regístrate aquí.</a></p>
+        </div>
+    </div>
 </body>
 </html>

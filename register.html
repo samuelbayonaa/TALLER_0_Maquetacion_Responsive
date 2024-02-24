@@ -2,25 +2,25 @@
 <html>
 <head>
 	<title>Hotelia Registration</title>
-	<link rel="stylesheet" type="text/css" href="css\register.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
 <body>
 	<div class="register-box">
-
+		<h1>Registrate</h1>
 		<form action="/register" method="post">
 			<div class="textbox">
 				<label for="document-type">Tipo de documento:</label>
 				<select id="document-type" name="document_type">
 					<option value="">Selecciona una opción</option>
-					<option value="dni">Cedula</option>
-					<option value="passport">Cedula Extranjera</option>
+					<option value="dni">Cédula</option>
+					<option value="passport">Cédula Extranjera</option>
 				</select>
 			</div>
 			<div class="textbox">
 				<input type="text" name="first_name" placeholder="Nombres" required>
 			</div>
 			<div class="textbox">
-				<input type="date" name="birthdate" placeholder="Fecha nacimiento" required>
+				<input type="date" name="birthdate" placeholder="Fecha de nacimiento" required>
 			</div>
 			<div class="textbox">
 				<input type="email" name="email" placeholder="Email" required>
@@ -50,18 +50,27 @@
 			</div>
 			<div class="textbox">
 				<input type="text" name="last_name" placeholder="Apellidos" required>
-			</div><br>
+			</div>
 			<div class="textbox">
 				<label for="gender">Género:</label>
-				<select id="gender" name="gender"><br>
-					<option value="">Selecciona una opción</option><br>
+				<select id="gender" name="gender">
+					<option value="">Selecciona una opción</option>
 					<option value="male">Hombre</option>
 					<option value="female">Mujer</option>
 					<option value="other">Otro</option>
-				</select><br>
+				</select>
 			</div>
 			<div class="textbox">
 				<input type="tel" name="phone" placeholder="Teléfono de contacto" required>
 			</div>
 			<div class="textbox">
-				<input type="file" name="photo" placeholder="F
+				<label for="photo">Foto:</label>
+				<input type="file" id="photo" name="photo" accept="image/*" required>
+			</div>
+			<div class="textbox">
+				<input type="submit" value="Registrarse">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

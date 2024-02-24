@@ -1,118 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-  }
-  
-  .register-box {
-    width: 400px;
-    height: 650px;
-    background-color: #fff;
-    color: #333;
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    margin: 75px auto;
-    padding: 40px;
-  }
-  
-  .register-box h1 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .textbox {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  .textbox input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 16px;
-  }
-  
-  .textbox select {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    font-size: 16px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding-left: 10px;
-  }
-  
-  .register-box input[type="submit"] {
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 4px;
-    background-color: #5fbaa0;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .register-box input[type="submit"]:hover {
-    background-color: #4da88d;
-  }
-  
-  .register-box label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .register-box p {
-    text-align: center;
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .register-box .file-input {
-    display: none;
-  }
-  
-  .register-box .file-label {
-    width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-  
-  .register-box .file-label span {
-    font-size: 14px;
-    color: #5fbaa0;
-  }
-  
-  .register-box input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
-  
-  .register-box .terms-and-conditions {
-    margin-top: 20px;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.register-box {
+  width: 400px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 75px auto;
+  padding: 40px;
+}
+
+.register-box h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.textbox {
+  margin-bottom: 20px;
+}
+
+.textbox label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.textbox input,
+.textbox select {
+  width: calc(100% - 22px); /* Adjusted width to accommodate for padding and border */
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.textbox input[type="submit"] {
+  background-color: #5fbaa0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.textbox input[type="submit"]:hover {
+  background-color: #4da88d;
+}
+
