@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotelia Registration</title>
+	<link rel="stylesheet" type="text/css" href="css\register.css">
+</head>
+<body>
+	<div class="register-box">
+
+		<form action="/register" method="post">
+			<div class="textbox">
+				<label for="document-type">Tipo de documento:</label>
+				<select id="document-type" name="document_type">
+					<option value="">Selecciona una opción</option>
+					<option value="dni">Cedula</option>
+					<option value="passport">Cedula Extranjera</option>
+				</select>
+			</div>
+			<div class="textbox">
+				<input type="text" name="first_name" placeholder="Nombres" required>
+			</div>
+			<div class="textbox">
+				<input type="date" name="birthdate" placeholder="Fecha nacimiento" required>
+			</div>
+			<div class="textbox">
+				<input type="email" name="email" placeholder="Email" required>
+			</div>
+			<div class="textbox">
+				<label for="country">País de origen:</label>
+				<select id="country" name="country">
+					<option value="">Selecciona un país</option>
+					<option value="argentina">Argentina</option>
+					<option value="bolivia">Bolivia</option>
+					<option value="chile">Chile</option>
+					<option value="colombia">Colombia</option>
+					<option value="ecuador">Ecuador</option>
+					<option value="peru">Perú</option>
+					<option value="uruguay">Uruguay</option>
+					<option value="venezuela">Venezuela</option>
+				</select>
+			</div>
+			<div class="textbox">
+				<input type="password" name="password" placeholder="Contraseña" required>
+			</div>
+			<div class="textbox">
+				<input type="password" name="confirm_password" placeholder="Confirmar contraseña" required>
+			</div>
+			<div class="textbox">
+				<input type="text" name="document_number" placeholder="Número de documento" required>
+			</div>
+			<div class="textbox">
+				<input type="text" name="last_name" placeholder="Apellidos" required>
+			</div><br>
+			<div class="textbox">
+				<label for="gender">Género:</label>
+				<select id="gender" name="gender"><br>
+					<option value="">Selecciona una opción</option><br>
+					<option value="male">Hombre</option>
+					<option value="female">Mujer</option>
+					<option value="other">Otro</option>
+				</select><br>
+			</div>
+			<div class="textbox">
+				<input type="tel" name="phone" placeholder="Teléfono de contacto" required>
+			</div>
+			<div class="textbox">
+				<input type="file" name="photo" placeholder="F
